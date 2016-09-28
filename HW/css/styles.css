@@ -1,13 +1,17 @@
-/*
 header.top {
-    background-color: aqua;
+    background-color: floralwhite;
+    float: right;
 }
-*/
 
 h1.top {
     background-color: brown;
     color: aliceblue;
     display: inline;
+    border: 10px solid green;
+}
+
+nav.position {
+    margin-top: 10px;
 }
 
 body.Home {
@@ -29,19 +33,17 @@ p.block {
     border: 1px solid black;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-right: 25%;
-    margin-left: 25%;
     background-color: lightblue;
 }
 
 img.centerPic {
+    align-content: center;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 100px;
 }
 
 footer.footer {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 20px;
     text-align: center;
 }
