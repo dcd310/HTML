@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+header,
+footer {
+    background-color: #eeeeee;
+}
+
+header h1,
+header nav,
+header ul {
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+nav.top-nav ul li {
+    display: inline;
+}
+
+nav {
+    float: right;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+div.image-container {
+    display: inline-block;
+}
+
+input.burger-checkbox,
+label.burger {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    nav.top-nav {
+        display: none;
+    }
+    label.burger {
+        display: inline;
+        position: absolute;
+        right: 0px;
+        margin: 15px;
+        cursor: pointer;
+    }
+    label.burger:before {
+        content: '/2630';
+    }
+    input.burger-checkbox:checked ~ nav.top-nav {
+        display: block;
+        padding-top: 100px;
+    }
+}
