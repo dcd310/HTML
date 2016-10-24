@@ -25,8 +25,8 @@ h2 {
 div.info {
     position: relative;
     text-align: center;
-    font-size: 16px;
-    max-width: 60%;
+    font-size: 18px;
+    max-width: 55%;
     margin: auto;
 }
 
@@ -41,6 +41,7 @@ iframe.video {
 
 div.info p.home {
     text-align: left;
+    margin-top: 1%;
     font-size: 24px;
 }
 
@@ -57,6 +58,10 @@ div.info p {
 div.info p.aboutP {
     margin-top: 5%;
     font-size: 20px;
+}
+
+div.info img.width {
+    width: 90%;
 }
 
 nav.primary-nav {
@@ -134,6 +139,7 @@ label.burger {
         display: block;
         width: 100%;
         background-color: grey;
+        z-index: 100;
     }
 }
 
