@@ -2,34 +2,65 @@
 <html lang="en-us">
 
 <head>
-    <title>Game Popularity Poll</title>
+    <title>Game Popularity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styleguide.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="nav">
+    <nav class="primary-nav">
         <ul id="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="choice.html">Derrick's Choices</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-    </div>
+    </nav>
     <div class="jumbotron">
         <h1>Gaming Popularity</h1>
-        <h2>Introduction</h2>
+        <!--        <h2>Introduction</h2>-->
     </div>
+
+    <input type="checkbox" class="burger-checkbox" id="burger-checkbox" />
+    <label class="burger" for="burger-checkbox"></label>
+
+    <nav class="primary-sidebar">
+        <ul>
+            <li><a href="pc.html">PC Games</a></li>
+            <li><a href="mmo.html">MMORPG Games</a></li>
+            <li><a href="phone.html">iPhone Games</a></li>
+        </ul>
+    </nav>
 
     <div class="info">
-        <p>FILLER</p>
+        <img class="homeImage" src="images/leagueoflegends.jpeg" alt="League of Legends">
+        <p class="home"><a href="pc.html"><b>Top PC Games of 2016</b></a>
+            <br> Here are the top 5 PC games of 2016 for all gamers alike. The ratings are based on the number of players each game has. If you're a gamer you should definitely check it out!
+        </p>
 
-        <ul class="games">
-            <li>Action Games</li>
-            <li>MMO Games</li>
-            <li>MOBA Games</li>
-            <li>Phone Games</li>
-        </ul>
-        <img src="images/summonersrift.jpg" alt="Summoner's Rift" title="Summoner's Rift" height="30%px" width="30%px">
+        <br>
+        <br>
+        <br>
+
+        <img class="homeImage" src="images/wowLegion.jpg" alt="WoW Legion logo">
+        <p class="home"><a href="mmo.html"><b>Top MMORPG Games of 2016</b></a>
+            <br> These are the top 5 massively multiplayer online role-playing games. If you're interested in playing a new interactive game with your friends (or to just meet new gaming friends online), these games are for you!
+        </p>
+
+        <br>
+        <img class="homeImage" src="images/minecraft.jpg" alt="MineCraft Pocket Edition">
+        <p class="home"><a href="phone.html"><b>Top iPhone Games of 2016</b></a>
+            <br> The top 5 iPhone games span from a sandbox <i>Mincraft</i> to a board game called <i>Life</i>. With phones becoming so diverse, we can only imagine the games to continue to grow along side the phones.
+        </p>
     </div>
 </body>
+
+<br>
+<br>
+
+<footer>
+    <div class="foot">
+        Gaming Popularity &copy; Derrick Du, 2016
+    </div>
+</footer>
 
 </html>

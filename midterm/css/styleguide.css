@@ -22,32 +22,44 @@ h2 {
     text-align: center;
 }
 
-.info {
+div.info {
     position: relative;
-    font-size: 30px;
-}
-
-.info p {
-    margin-top: 0px;
     text-align: center;
+    font-size: 16px;
+    max-width: 60%;
+    margin: auto;
 }
 
-.info img {
-    display: inline;
-    float: right;
-    margin-top: 50px;
-    margin-right: 50px;
+#conclusion {
+    font-size: 24px;
 }
 
-.games {
-    position: relative;
-    display: inline;
+iframe.video {
+    width: 63%;
+    height: 315px;
+}
+
+div.info p.home {
+    text-align: left;
+    font-size: 24px;
+}
+
+div.info img.homeImage {
+    width: 20%;
     float: left;
-    font-size: 15px;
-    margin-top: 50px;
+    margin-right: 10px;
 }
 
-.nav {
+div.info p {
+    margin-top: 0px;
+}
+
+div.info p.aboutP {
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+nav.primary-nav {
     position: relative;
     top: -10px;
     padding: 10px 0px 50px 0px;
@@ -55,25 +67,86 @@ h2 {
     margin-bottom: 0px;
 }
 
-.nav ul,
-li,
-a {
+nav.primary-nav ul,
+nav.primary-nav li,
+nav.primary-nav a {
     list-style-type: none;
     display: inline;
     padding-left: 10px;
     color: black;
 }
 
-.jumbotron {
+div.jumbotron {
     background-color: skyblue;
     position: relative;
     top: -10px;
-    padding: 20px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
-.jumbotron h1,
+div.jumbotron h1,
 h2 {
     text-align: center;
     color: antiquewhite;
     text-shadow: 1px 1px blue;
+}
+
+nav.primary-sidebar {
+    background-color: skyblue;
+    margin-top: 5%;
+    float: left;
+    position: fixed;
+    min-width: 100px;
+}
+
+nav.primary-sidebar ul {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+nav.primary-sidebar li {
+    list-style-type: none;
+}
+
+nav.primary-sidebar a {
+    color: azure;
+}
+
+input.burger-checkbox,
+label.burger {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    nav.primary-sidebar {
+        display: none;
+    }
+    label.burger {
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        cursor: pointer;
+    }
+    label.burger:before {
+        content: '\2630';
+    }
+    input.burger-checkbox:checked ~ nav.primary-sidebar {
+        display: block;
+        width: 100%;
+        background-color: grey;
+    }
+}
+
+footer {
+    background-color: skyblue;
+    text-align: center;
+    position: fixed;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer div.foot {
+    width: 90%;
+    margin: auto;
 }
