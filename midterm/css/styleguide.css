@@ -12,11 +12,7 @@ body {
     padding-left: 30px;
 }
 
-h1 {
-    color: black;
-    text-align: center;
-}
-
+h1,
 h2 {
     color: black;
     text-align: center;
