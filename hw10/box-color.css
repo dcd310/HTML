@@ -1,0 +1,14 @@
+#box {
+    color: black;
+    font-size: 36px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+}
+
+#red,
+#yellow,
+#blue {
+    z-index: 100;
+}
