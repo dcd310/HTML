@@ -3,6 +3,10 @@ html {
     min-height: 100%;
 }
 
+#homeh1 {
+    text-align: center;
+}
+
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
